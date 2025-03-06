@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Food Ordering App</title>
+    <link rel="stylesheet" href="styles/menu.css">
+</head>
+<body>
+    <header>
+        <h1>Quick Bites</h1>
+        <p>Fast & Delicious</p>
+    </header>
+    
+    <div class="container">
+        <!-- Category Navigation -->
+        <div class="categories-container">
+            <div class="categories">
+                <div class="category-item active" data-category="all">
+                    <div class="category-icon">
+                        <img src="https://via.placeholder.com/40/ff6b6b/ffffff?text=All" alt="All foods icon">
+                    </div>
+                    <span class="category-name">All</span>
+                </div>
+                
+                <div class="category-item" data-category="burger">
+                    <div class="category-icon">
+                        <img src="https://via.placeholder.com/40/ff6b6b/ffffff?text=🍔" alt="Burger icon">
+                    </div>
+                    <span class="category-name">Burger</span>
+                </div>
+                
+                <div class="category-item" data-category="mexican">
+                    <div class="category-icon">
+                        <img src="https://via.placeholder.com/40/ff6b6b/ffffff?text=🌮" alt="Mexican food icon">
+                    </div>
+                    <span class="category-name">Mexican</span>
+                </div>
+                
+                <div class="category-item" data-category="indian">
+                    <div class="category-icon">
+                        <img src="https://via.placeholder.com/40/ff6b6b/ffffff?text=🍛" alt="Indian food icon">
+                    </div>
+                    <span class="category-name">Indian Food</span>
+                </div>
+                
+                <div class="category-item" data-category="salad">
+                    <div class="category-icon">
+                        <img src="https://via.placeholder.com/40/ff6b6b/ffffff?text=🥗" alt="Salad icon">
+                    </div>
+                    <span class="category-name">Salad</span>
+                </div>
+                
+                <div class="category-item" data-category="pizza">
+                    <div class="category-icon">
+                        <img src="https://via.placeholder.com/40/ff6b6b/ffffff?text=🍕" alt="Pizza icon">
+                    </div>
+                    <span class="category-name">Pizza</span>
+                </div>
+                
+                <div class="category-item" data-category="bbq">
+                    <div class="category-icon">
+                        <img src="https://via.placeholder.com/40/ff6b6b/ffffff?text=🍖" alt="BBQ icon">
+                    </div>
+                    <span class="category-name">BBQ</span>
+                </div>
+                
+                <div class="category-item" data-category="sandwich">
+                    <div class="category-icon">
+                        <img src="https://via.placeholder.com/40/ff6b6b/ffffff?text=🥪" alt="Sandwich icon">
+                    </div>
+                    <span class="category-name">Sandwich</span>
+                </div>
+                
+                <div class="category-item" data-category="meat">
+                    <div class="category-icon">
+                        <img src="https://via.placeholder.com/40/ff6b6b/ffffff?text=🥩" alt="Meat icon">
+                    </div>
+                    <span class="category-name">Meat</span>
+                </div>
+                
+                <div class="category-item" data-category="noodles">
+                    <div class="category-icon">
+                        <img src="https://via.placeholder.com/40/ff6b6b/ffffff?text=🍜" alt="Noodles icon">
+                    </div>
+                    <span class="category-name">Noodles</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- All Foods Section (visible by default) -->
+        <div class="food-category active" id="all">
+            <div class="menu-section">
+                <h2 class="category-title">All Foods</h2>
+                <div class="menu-items">
+                    <!-- Burger Items -->
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Burger" alt="Classic Burger" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Classic Burger</h3>
+                            <p class="menu-description">Beef patty with lettuce, tomato, onion & special sauce.</p>
+                            <p class="menu-price">$5.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Mexican Items -->
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Taco" alt="Beef Taco" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Beef Taco</h3>
+                            <p class="menu-description">Corn tortilla with seasoned beef, lettuce, cheese & salsa.</p>
+                            <p class="menu-price">$3.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Indian Items -->
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Curry" alt="Butter Chicken" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Butter Chicken</h3>
+                            <p class="menu-description">Tender chicken in a creamy tomato sauce with Indian spices.</p>
+                            <p class="menu-price">$12.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Pizza Items -->
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Pizza" alt="Margherita" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Margherita Pizza</h3>
+                            <p class="menu-description">Tomato sauce, mozzarella & fresh basil on thin crust.</p>
+                            <p class="menu-price">$8.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <!-- BBQ Items -->
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=BBQ" alt="BBQ Ribs" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">BBQ Ribs</h3>
+                            <p class="menu-description">Slow-cooked pork ribs with smoky BBQ sauce.</p>
+                            <p class="menu-price">$14.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <!-- More items from other categories -->
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Salad" alt="Caesar Salad" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Caesar Salad</h3>
+                            <p class="menu-description">Romaine lettuce, croutons, parmesan & Caesar dressing.</p>
+                            <p class="menu-price">$7.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Sandwich" alt="Club Sandwich" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Club Sandwich</h3>
+                            <p class="menu-description">Triple-decker with chicken, bacon, lettuce, tomato & mayo.</p>
+                            <p class="menu-price">$9.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Steak" alt="Ribeye Steak" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Ribeye Steak</h3>
+                            <p class="menu-description">Grilled ribeye steak with herb butter and roasted vegetables.</p>
+                            <p class="menu-price">$19.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Noodles" alt="Pad Thai" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Pad Thai</h3>
+                            <p class="menu-description">Stir-fried rice noodles with egg, tofu, bean sprouts & peanuts.</p>
+                            <p class="menu-price">$11.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Burger Section -->
+        <div class="food-category" id="burger">
+            <div class="menu-section">
+                <h2 class="category-title">Burgers</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Burger" alt="Classic Burger" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Classic Burger</h3>
+                            <p class="menu-description">Beef patty with lettuce, tomato, onion & special sauce.</p>
+                            <p class="menu-price">$5.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Cheese" alt="Cheese Burger" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Cheese Burger</h3>
+                            <p class="menu-description">Beef patty with cheddar cheese, pickles & ketchup.</p>
+                            <p class="menu-price">$6.49</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Bacon" alt="Bacon Burger" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Bacon Burger</h3>
+                            <p class="menu-description">Beef patty with bacon, cheese & BBQ sauce.</p>
+                            <p class="menu-price">$7.49</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Veggie" alt="Veggie Burger" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Veggie Burger</h3>
+                            <p class="menu-description">Plant-based patty with lettuce, tomato & vegan mayo.</p>
+                            <p class="menu-price">$6.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Spicy" alt="Spicy Burger" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Spicy Burger</h3>
+                            <p class="menu-description">Beef patty with jalapeños, pepper jack & spicy sauce.</p>
+                            <p class="menu-price">$6.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mexican Section -->
+        <div class="food-category" id="mexican">
+            <div class="menu-section">
+                <h2 class="category-title">Mexican</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Taco" alt="Beef Taco" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Beef Taco</h3>
+                            <p class="menu-description">Corn tortilla with seasoned beef, lettuce, cheese & salsa.</p>
+                            <p class="menu-price">$3.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Burrito" alt="Chicken Burrito" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Chicken Burrito</h3>
+                            <p class="menu-description">Flour tortilla with grilled chicken, rice, beans & guacamole.</p>
+                            <p class="menu-price">$8.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Nachos" alt="Loaded Nachos" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Loaded Nachos</h3>
+                            <p class="menu-description">Tortilla chips with cheese, jalapeños, salsa & sour cream.</p>
+                            <p class="menu-price">$7.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Quesadilla" alt="Cheese Quesadilla" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Cheese Quesadilla</h3>
+                            <p class="menu-description">Grilled flour tortilla filled with melted cheese & peppers.</p>
+                            <p class="menu-price">$5.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Enchilada" alt="Beef Enchilada" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Beef Enchilada</h3>
+                            <p class="menu-description">Corn tortilla filled with beef, topped with sauce & cheese.</p>
+                            <p class="menu-price">$9.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Indian Food Section -->
+        <div class="food-category" id="indian">
+            <div class="menu-section">
+                <h2 class="category-title">Indian Food</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Curry" alt="Butter Chicken" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Butter Chicken</h3>
+                            <p class="menu-description">Tender chicken in a creamy tomato sauce with Indian spices.</p>
+                            <p class="menu-price">$12.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Add more Indian food items here -->
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Naan" alt="Garlic Naan" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Garlic Naan</h3>
+                            <p class="menu-description">Soft flatbread with garlic and butter, baked in a tandoor oven.</p>
+                            <p class="menu-price">$2.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Biryani" alt="Chicken Biryani" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Chicken Biryani</h3>
+                            <p class="menu-description">Fragrant basmati rice cooked with chicken, herbs and spices.</p>
+                            <p class="menu-price">$13.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Samosa" alt="Vegetable Samosa" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Vegetable Samosa</h3>
+                            <p class="menu-description">Crispy pastry filled with spiced potatoes and peas.</p>
+                            <p class="menu-price">$4.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Paneer" alt="Paneer Tikka Masala" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Paneer Tikka Masala</h3>
+                            <p class="menu-description">Cottage cheese cubes in a spiced tomato-based sauce.</p>
+                            <p class="menu-price">$11.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pizza Section -->
+        <div class="food-category" id="pizza">
+            <div class="menu-section">
+                <h2 class="category-title">Pizza</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Pizza" alt="Margherita" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Margherita Pizza</h3>
+                            <p class="menu-description">Tomato sauce, mozzarella & fresh basil on thin crust.</p>
+                            <p class="menu-price">$8.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Pepperoni" alt="Pepperoni Pizza" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Pepperoni Pizza</h3>
+                            <p class="menu-description">Tomato sauce, mozzarella & pepperoni slices.</p>
+                            <p class="menu-price">$10.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Hawaiian" alt="Hawaiian Pizza" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Hawaiian Pizza</h3>
+                            <p class="menu-description">Tomato sauce, mozzarella, ham & pineapple.</p>
+                            <p class="menu-price">$11.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Veggie" alt="Vegetarian Pizza" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Vegetarian Pizza</h3>
+                            <p class="menu-description">Tomato sauce, mozzarella, bell peppers, mushrooms, onions & olives.</p>
+                            <p class="menu-price">$12.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=BBQ" alt="BBQ Chicken Pizza" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">BBQ Chicken Pizza</h3>
+                            <p class="menu-description">BBQ sauce, mozzarella, grilled chicken, red onions & cilantro.</p>
+                            <p class="menu-price">$13.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Salad Section -->
+        <div class="food-category" id="salad">
+            <div class="menu-section">
+                <h2 class="category-title">Salads</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/300x225/ff6b6b/ffffff?text=Caesar" alt="Caesar Salad" class="menu-image">
+                        <div class="menu-info">
+                            <h3 class="menu-name">Caesar Salad</h3>
+                            <p class="menu-description">Romaine lettuce, croutons, parmesan & Caesar dressing.</p>
+                            <p class="menu-price">$7.99</p>
+                            <button class="add-to-cart">Add</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Add more salad items here -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Add sections for other categories: bbq, sandwich, meat, noodles -->
+    </div>
+    
+    <script src="styles/menu.js"></script>
+</body>
+</html>
